@@ -1,0 +1,125 @@
+<!doctype html>
+<!--
+  Politique de confidentialité de Meddor.
+
+  Elle décrit ce que l'application fait AUJOURD'HUI. À mettre à jour le jour où
+  l'envoi de photos et d'ordonnances sera branché : ces données ne sont pas
+  encore transmises à nos serveurs, et l'écrire serait faux.
+
+  Google Play exige une URL publique et stable. Héberger ce fichier tel quel
+  (GitHub Pages, Netlify, ou un sous-domaine de meddor.fr) et renseigner l'URL
+  dans la fiche Play Console.
+-->
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meddor — Politique de confidentialité</title>
+  <style>
+    :root { --accent:#C48B6C; --text:#2C2C2C; --muted:#6B6B6B; --bg:#FAF9F7; --line:#E8DFD8; }
+    body { margin:0; background:var(--bg); color:var(--text);
+           font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+    main { max-width:44rem; margin:0 auto; padding:3rem 1.5rem 5rem; }
+    h1 { font-size:2rem; margin:0 0 .25rem; }
+    h2 { font-size:1.15rem; margin:2.5rem 0 .5rem; }
+    .sub { color:var(--muted); margin:0 0 2.5rem; }
+    ul { padding-left:1.2rem; }
+    li { margin:.35rem 0; }
+    a { color:var(--accent); }
+    .box { background:#fff; border:1px solid var(--line); border-radius:16px;
+           padding:1.25rem 1.5rem; margin:1.5rem 0; }
+    footer { margin-top:3rem; padding-top:1.5rem; border-top:1px solid var(--line);
+             color:var(--muted); font-size:.9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Politique de confidentialité</h1>
+  <p class="sub">Meddor — dernière mise à jour : 27 août 2026</p>
+
+  <p>
+    Meddor est un carnet de santé pour animaux de compagnie. Cette page explique, sans
+    détour, quelles données l'application enregistre, pourquoi, et ce que vous pouvez en
+    faire.
+  </p>
+
+  <h2>Ce que nous enregistrons</h2>
+  <ul>
+    <li><strong>Votre adresse email</strong>, qui sert d'identifiant de connexion.</li>
+    <li><strong>Les fiches de vos animaux</strong> : nom, espèce, race, date de naissance, sexe.</li>
+    <li><strong>Leur suivi de santé</strong> : pesées, vaccins, traitements, préventifs,
+        symptômes observés, alimentation.</li>
+    <li><strong>Votre organisation</strong> : tâches, notes, rendez-vous, et les lieux que
+        vous enregistrez — un lieu peut contenir une adresse et un numéro de téléphone que
+        vous saisissez vous-même.</li>
+    <li><strong>Les accès que vous partagez</strong> : le nom et l'email de la personne à qui
+        vous confiez un animal, et la période de garde.</li>
+  </ul>
+
+  <div class="box">
+    <p style="margin:0">
+      <strong>Ce que nous n'enregistrons pas.</strong> Aucune donnée de localisation, aucun
+      identifiant publicitaire, aucun suivi entre applications. Nous ne revendons ni ne
+      partageons vos données avec des tiers à des fins commerciales.
+    </p>
+  </div>
+
+  <h2>Qui peut voir vos données</h2>
+  <p>
+    Vos données appartiennent à votre <em>foyer</em>. La base de données refuse toute lecture
+    provenant d'un autre foyer : ce n'est pas un réglage de l'application, mais une règle
+    appliquée côté serveur à chaque requête.
+  </p>
+  <p>
+    Lorsque vous créez un <strong>accès partagé</strong>, la personne désignée voit uniquement
+    les animaux que vous avez choisis, pendant la période que vous avez fixée. Elle peut
+    consulter les dossiers, cocher les soins et écrire ses propres notes ; elle ne peut pas
+    modifier le dossier ni supprimer les notes des autres. Passée la date de fin, ou dès que
+    vous révoquez l'accès, il cesse de fonctionner immédiatement.
+  </p>
+
+  <h2>Comment vos données sont protégées</h2>
+  <ul>
+    <li>Les échanges avec nos serveurs passent en HTTPS, et les données sont chiffrées au
+        repos.</li>
+    <li>Votre session est conservée dans le trousseau sécurisé de votre téléphone, jamais dans
+        un fichier en clair.</li>
+    <li>Nos journaux techniques masquent systématiquement les champs nominatifs : ni votre nom,
+        ni votre email, ni vos adresses n'y apparaissent.</li>
+    <li>Les opérations sensibles (création d'animal, traitements, vaccins, accès partagés) sont
+        journalisées, et ce journal ne peut être ni modifié ni effacé depuis l'application.</li>
+  </ul>
+
+  <h2>Où vos données sont hébergées</h2>
+  <p>
+    Sur l'infrastructure de <a href="https://supabase.com" rel="noopener">Supabase</a>, dans
+    la région Europe de l'Ouest (Irlande). Elles ne quittent pas l'Union européenne.
+  </p>
+
+  <h2>Combien de temps nous les gardons</h2>
+  <p>
+    Aussi longtemps que votre compte existe. La suppression de votre compte entraîne celle de
+    tout ce qui s'y rattache — animaux, historique, notes, accès partagés — sans conservation
+    de copie.
+  </p>
+
+  <h2>Vos droits</h2>
+  <p>
+    Conformément au RGPD, vous pouvez demander l'accès à vos données, leur rectification,
+    leur effacement, ou leur portabilité. Écrivez à
+    <a href="mailto:contact@meddor.fr">contact@meddor.fr</a> : nous répondons sous 30 jours.
+  </p>
+
+  <h2>Autorisations demandées par l'application</h2>
+  <ul>
+    <li><strong>Appareil photo</strong> — pour photographier votre animal ou une ordonnance.
+        La photo n'est prise que lorsque vous l'ouvrez vous-même.</li>
+    <li><strong>Accès aux images</strong> — pour choisir une photo existante.</li>
+  </ul>
+
+  <footer>
+    Meddor · <a href="mailto:contact@meddor.fr">contact@meddor.fr</a>
+  </footer>
+</main>
+</body>
+</html>

@@ -35,7 +35,7 @@
 <body>
 <main>
   <h1>Politique de confidentialité</h1>
-  <p class="sub">Meddor — dernière mise à jour : 27 août 2026</p>
+  <p class="sub">Meddor — dernière mise à jour : 14 septembre 2026</p>
 
   <p>
     Meddor est un carnet de santé pour animaux de compagnie. Cette page explique, sans
@@ -52,9 +52,32 @@
     <li><strong>Votre organisation</strong> : tâches, notes, rendez-vous, et les lieux que
         vous enregistrez — un lieu peut contenir une adresse et un numéro de téléphone que
         vous saisissez vous-même.</li>
-    <li><strong>Les accès que vous partagez</strong> : le nom et l'email de la personne à qui
-        vous confiez un animal, et la période de garde.</li>
+    <li><strong>Les membres de votre foyer</strong> : les personnes que vous invitez à
+        partager le carnet, identifiées par leur email.</li>
+    <li><strong>Les photos et documents que vous ajoutez</strong> : photos de votre animal,
+        ordonnances et pages de carnet de vaccination que vous photographiez, avatars générés.</li>
   </ul>
+  <h2>Lecture automatique par intelligence artificielle</h2>
+  <p>
+    Certaines fonctions envoient une image à <a href="https://openai.com" rel="noopener">OpenAI</a>
+    (États-Unis) pour la lire, uniquement lorsque vous les déclenchez vous-même :
+  </p>
+  <ul>
+    <li>la <strong>photo d'une ordonnance</strong> ou d'un carnet de vaccination, pour en
+        extraire les traitements ou les vaccins — vous relisez et validez chaque ligne avant
+        qu'elle soit enregistrée ;</li>
+    <li>la <strong>photo d'un paquet d'aliment</strong>, pour en lire le nom ;</li>
+    <li>le <strong>nom d'un aliment</strong>, pour retrouver sa composition sur le site du
+        fabricant ;</li>
+    <li>les <strong>photos de votre animal</strong>, pour dessiner son avatar.</li>
+  </ul>
+  <p>
+    OpenAI traite ces images pour produire la réponse et ne les utilise pas pour entraîner ses
+    modèles (conditions de son API). Nous ne lui envoyons ni votre nom, ni votre email, ni le
+    reste du carnet. Une ordonnance porte souvent le nom du propriétaire et du vétérinaire :
+    si vous ne souhaitez pas qu'elle soit lue par ce service, saisissez le traitement à la main.
+    Le nombre de lectures par jour et par personne est plafonné.
+  </p>
 
   <div class="box">
     <p style="margin:0">
@@ -66,16 +89,10 @@
 
   <h2>Qui peut voir vos données</h2>
   <p>
-    Vos données appartiennent à votre <em>foyer</em>. La base de données refuse toute lecture
-    provenant d'un autre foyer : ce n'est pas un réglage de l'application, mais une règle
-    appliquée côté serveur à chaque requête.
-  </p>
-  <p>
-    Lorsque vous créez un <strong>accès partagé</strong>, la personne désignée voit uniquement
-    les animaux que vous avez choisis, pendant la période que vous avez fixée. Elle peut
-    consulter les dossiers, cocher les soins et écrire ses propres notes ; elle ne peut pas
-    modifier le dossier ni supprimer les notes des autres. Passée la date de fin, ou dès que
-    vous révoquez l'accès, il cesse de fonctionner immédiatement.
+    Vos données appartiennent à votre <em>foyer</em> : vous et les personnes que vous y invitez.
+    La base de données refuse toute lecture provenant d'un autre foyer : ce n'est pas un réglage
+    de l'application, mais une règle appliquée côté serveur à chaque requête. Un code
+    d'invitation vaut sept jours, ne sert qu'une fois, et n'est jamais conservé en clair.
   </p>
 
   <h2>Comment vos données sont protégées</h2>
@@ -86,39 +103,42 @@
         un fichier en clair.</li>
     <li>Nos journaux techniques masquent systématiquement les champs nominatifs : ni votre nom,
         ni votre email, ni vos adresses n'y apparaissent.</li>
-    <li>Les opérations sensibles (création d'animal, traitements, vaccins, accès partagés) sont
+    <li>Les opérations sensibles (création d'animal, traitements, bilans) sont
         journalisées, et ce journal ne peut être ni modifié ni effacé depuis l'application.</li>
   </ul>
 
   <h2>Où vos données sont hébergées</h2>
   <p>
     Sur l'infrastructure de <a href="https://supabase.com" rel="noopener">Supabase</a>, dans
-    la région Europe de l'Ouest (Irlande). Elles ne quittent pas l'Union européenne.
+    la région Europe de l'Ouest (Irlande). Seules les images décrites ci-dessus, au moment
+    où vous demandez leur lecture, transitent par OpenAI aux États-Unis.
   </p>
 
   <h2>Combien de temps nous les gardons</h2>
   <p>
-    Aussi longtemps que votre compte existe. La suppression de votre compte entraîne celle de
-    tout ce qui s'y rattache — animaux, historique, notes, accès partagés — sans conservation
-    de copie.
+    Aussi longtemps que votre compte existe. La suppression de votre compte, depuis
+    Réglages → Compte, entraîne celle de tout ce qui s'y rattache — animaux, historique,
+    notes, photos et documents — sans conservation de copie.
   </p>
 
   <h2>Vos droits</h2>
   <p>
     Conformément au RGPD, vous pouvez demander l'accès à vos données, leur rectification,
     leur effacement, ou leur portabilité. Écrivez à
-    <a href="mailto:contact@meddor.fr">contact@meddor.fr</a> : nous répondons sous 30 jours.
+    <a href="mailto:connect.meddor@gmail.com">connect.meddor@gmail.com</a> : nous répondons sous 30 jours.
   </p>
 
   <h2>Autorisations demandées par l'application</h2>
   <ul>
-    <li><strong>Appareil photo</strong> — pour photographier votre animal ou une ordonnance.
-        La photo n'est prise que lorsque vous l'ouvrez vous-même.</li>
+    <li><strong>Appareil photo</strong> — pour photographier votre animal, une ordonnance,
+        ou lire le code-barres d'un aliment. La photo n'est prise que lorsque vous l'ouvrez
+        vous-même.</li>
     <li><strong>Accès aux images</strong> — pour choisir une photo existante.</li>
+    <li><strong>Notifications</strong> — pour les rappels de soins, réglables un par un.</li>
   </ul>
 
   <footer>
-    Meddor · <a href="mailto:contact@meddor.fr">contact@meddor.fr</a>
+    Meddor · <a href="mailto:connect.meddor@gmail.com">connect.meddor@gmail.com</a>
   </footer>
 </main>
 </body>
